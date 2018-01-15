@@ -1,0 +1,544 @@
+<! DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Overest</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">  
+        
+        <link rel="icon" href="img/icon.png" />
+
+         <!-- STYLESHEETS -->
+        <link rel="stylesheet" href="css/bootstrap-reboot.min.css">  
+        <link rel="stylesheet" href="css/bootstrap.min.css">  
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css">    
+  
+        <link rel="stylesheet" href="css/font-awesome.min.css"> 
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+        <link rel="stylesheet" href="css/style.css">  
+
+        <link rel="stylesheet" href="css/animate.css">
+
+    </head>
+    <body class="daytime">
+        <header class="main_h">
+            <div class="row d-flex align-items-center">
+                <a class="logo" href="#"><img src="img/icon.png" /></a>
+                            
+                <div class="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                            
+                <nav>
+                    <ul>
+                        <li><a href="#services">SERVIÇOS</a></li>
+                        <li><a href="#portfolio">PORTFÓLIO</a></li>
+                        <li><a href="#methodology">METODOLOGIA</a></li>
+                        <li><a href="#contact">CONTATO</a></li>
+                    </ul>
+                </nav>	
+            </div> <!-- / row -->		
+        </header>
+        <div id="page">	
+            <div class="keyart" id="nonparallax">
+            </div>
+            <div class="keyart" id="parallax">
+                <div class="view">
+                        <div class="clouds"></div>
+                        <canvas id="stars"></canvas>     
+                        <div class="artwork">
+                            <div class="moon-glow daytime"></div>
+                            <div class="moon daytime"></div>
+                            <div class="elk"></div>
+                        </div>
+                </div>
+                <!--<div class="keyart_layer parallax" id="keyart-0" data-speed="2"></div>		<!-- 00.0 -->
+                <!--<div class="keyart_layer parallax" id="keyart-1" data-speed="5"></div>	<!-- 12.5 -->
+                <!--<div class="keyart_layer parallax" id="keyart-2" data-speed="11"></div>		<!-- 25.0 -->
+                <!--<div class="keyart_layer parallax" id="keyart-3" data-speed="16"></div>	<!-- 37.5 -->
+                <div class="keyart_layer daytime parallax" id="keyart-4" data-speed="26"></div>		<!-- 50.0 -->
+                <div class="keyart_layer daytime parallax" id="keyart-5" data-speed="70"></div>	<!-- 62.5 -->                
+                <div class="keyart_layer daytime" id="keyart-8" data-speed="100"></div>	
+                <div class="keyart_layer demo" data-speed="100">
+                    <svg class="demo__svg hidden" width="850" height="200">  
+                        <path class="st0 overest" d="M87.2,0c49.8,0,87.4,34.3,87.4,86.5c0,50.3-37.6,86.5-87.4,86.5S0,138.7,0,86.5C0,37.9,35.7,0,87.2,0z
+                        M87.2,145.4c35.2,0,56.3-25.9,56.3-58.9c0-34.7-24.7-58.9-56.3-58.9c-32.1,0-56.1,24.2-56.1,58.9C31.1,120,55.8,145.4,87.2,145.4z
+                        "/>
+                        <path class="st0 overest" d="M251.3,140.6h-20.4L181.3,32.3h32.8l19.9,46.2c2.9,6.5,6.2,16,8.1,24.4c1.9-8.1,5-18,7.9-24.9l18.7-45.8h29
+                        L251.3,140.6z"/>
+                        <path class="st0 overest" d="M400.8,129.6c-10.8,9.1-26.1,13.4-41.2,13.4c-34.7,0-58-22.5-58-56.5c0-31.4,21.6-56.5,57-56.5
+                        c27.8,0,51,19.9,51,50.1c0,6.7-0.5,10.8-1.7,14.9h-77.9c2.4,16.3,15.3,25.2,32.3,25.2c13.2,0,24.2-4.8,30.4-9.8L400.8,129.6z
+                        M329.2,76.4h52.9c0.2-13.2-8.9-23.5-24.7-23.5C340.9,52.9,332,62.3,329.2,76.4z"/>                
+                        <path class="st0 overest" d="M431.9,33.5h27.5v10.5c5-6.9,11.7-12.5,24.7-12.5c8.9,0,13.2,1.4,16.8,4.1l-9.8,25.9
+                        c-5.3-3.1-8.1-4.1-13.9-4.1c-9.6,0-14.6,5.3-17.7,11.5v72.4h-27.5V33.5z"/>
+                        <path class="st0 overest" d="M609.2,129.6c-10.8,9.1-26.1,13.4-41.2,13.4c-34.7,0-58-22.5-58-56.5c0-31.4,21.6-56.5,57-56.5
+                        c27.8,0,51,19.9,51,50.1c0,6.7-0.5,10.8-1.7,14.9h-77.9c2.4,16.3,15.3,25.2,32.3,25.2c13.2,0,24.2-4.8,30.4-9.8L609.2,129.6z
+                        M537.6,76.4h52.9c0.2-13.2-8.9-23.5-24.7-23.5C549.3,52.9,540.4,62.3,537.6,76.4z"/>
+                        <path class="st0 overest"  d="M636.7,62.8c0-21.1,17.3-32.8,39.5-32.8c20.8,0,34.3,7.4,41,13.7l-10.3,19.6c-6.5-5-17.7-10.3-29.2-10.3
+                        c-8.4,0-13.4,4.6-13.4,9.3c0,18,58.2,8.1,58.2,46.2c0,21.3-17.2,34.5-43.6,34.5c-19.9,0-40-10.8-45-18.4l13.4-18
+                        c6.5,6.9,22.8,13.4,33.5,13.4c7.9,0,14.1-3.4,14.1-10.1C695,92.5,636.7,102.1,636.7,62.8z"/>
+                        <path class="st0 overest" d="M744.3,16.4h27.5v29.9h34.7v25.9h-34.7v39.3c0,11.7,3.8,19.4,12.9,19.4c7.4,0,12.7-3.4,16.5-6.2l8.4,21.3
+                        c-6.5,5.3-18,10.5-31.9,10.5c-24.4,0-33.5-15.8-33.5-43.4V16.4z"/>
+                    </svg>
+                </div>
+            </div>
+            <div id="maincontain">				
+                <section id="index" class="d-flex daytime">
+                    <div class="phone-box wow bounceInUp">
+                        <img src="img/phone.png" />
+                    </div>
+                    <div class="index-box d-flex flex-column">
+                        <h1>Querendo<br>Soluções <span
+                            class="txt-rotate daytime"
+                            data-period="2000"
+                            data-rotate='[ "digitais", "inovadoras", "modernas", "rápidas" ]'></span>?</h1>
+                        <h3>Em qualquer lugar e a qualquer hora</h3>
+                        <ul class="index-list">
+                            <li><img src="img/services/laptop.png" /></li>
+                            <li><img src="img/services/graphic_design.png" /></li>
+                            <li><img src="img/services/device.png" /></li>
+                        </ul>
+                        <a><button>EFETUAR ORÇAMENTO</button></a>
+                    </div>
+                    <svg class="divider-diagonal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <polygon fill="white" points="0,100 100,0 100,100"/>
+                    </svg> 
+                </section>
+                <section id="services">
+                    <div class="title-box wow fadeInRight">
+                        <h3 style="color: #5E2CE3;">O QUE </br>FAZEMOS?</h3>
+                        <h2>SERVIÇOS</h2>
+                        <div class="rectangle"></div>
+                    </div>
+                    <ul id="services-list">
+                        <li class="wow bounceInLeft" style="background-color:#00CBCB;">
+                            <h3>Sistemas <br> Web</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <div class="service-box" style="background-color:#159797;">
+                                <div class="box-center">
+                                    <img src="img/services/sistema.svg" />
+                                    <h3>Sistemas <br> Web</h3>
+                                </div>                                
+                            </div>
+                        </li>
+                        <li class="wow bounceInLeft" style="background-color: #8649B5;">
+                            <h3>Identidade <br>Visual</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <div class="service-box" style="background-color: #431A63;">
+                                <div class="box-center">
+                                    <img src="img/services/ui.svg" />
+                                    <h3>Identidade <br> Visual</h3>
+                                </div>                                
+                            </div>
+                        </li>
+                        <li class="wow bounceInLeft" style="background-color:#FF6464;">
+                            <h3>Sites<br>Promocionais</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <div class="service-box" style="background-color:#DF2E2E;">
+                                <div class="box-center">
+                                    <img src="img/services/site.svg" />
+                                    <h3>Sites<br>Promocionais</h3>
+                                </div>                                
+                            </div>
+                        </li>
+                        <li class="wow bounceInLeft" style="background-color:#F283B0;">
+                            <h3>Hospedagem <br> de Sistemas</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <div class="service-box" style="background-color:#CB0053;">
+                                <div class="box-center">
+                                    <img src="img/services/hospedagem.svg" />
+                                    <h3>Hospedagem <br> de Sistemas</h3>
+                                </div>                                
+                            </div>
+                        </li>
+                        <li class="wow bounceInLeft" style="background-color:#67E25E;">
+                            <h3>Aplicativos <br> Mobile</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <div class="service-box" style="background-color:#0FDF00;">
+                                <div class="box-center">
+                                    <img src="img/services/mobile.svg" />
+                                    <h3>Aplicativos <br> Mobile</h3>
+                                </div>                                
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section id="benefits" class="d-flex">
+                    <div id="benefit-1">
+                        <h4>Produtividade</h4>
+                        <div style="background-color: #7100DB;">
+                            <img src="img/services/mobile.svg" />
+                        </div>
+                        <p>We provide world class analytics to our costumers and make sure they get a detailed view of current market.</p>
+                    </div>
+                    <div id="benefit-3">
+                        <h4>Produtividade</h4>
+                        <div style="background-color: #FF5A6D;">
+                            <img src="img/services/mobile.svg" />
+                        </div>                        
+                        <p>We provide world class analytics to our costumers and make sure they get a detailed view of current market.</p>
+                    </div>
+                    <div id="benefit-2">
+                        <h4>Produtividade</h4>
+                        <div style="background-color: #431A63;">
+                            <img src="img/services/mobile.svg" />
+                        </div>                        
+                        <p>We provide world class analytics to our costumers and make sure they get a detailed view of current market.</p>
+                    </div>
+                    
+                </section>
+                <section id="portfolio">
+                    <div class="title-box wow fadeInLeft">
+                        <h3 style="color:#DF2E2E">NOSSOS</br> PROJETOS</h3>
+                        <h2>PORTFÓLIO</h2>
+                        <div class="rectangle"></div>
+                    </div>
+                            
+                    <div class="wrap">
+                        <div class="gallery-wrap">
+                            <ul id="filters" class="clearfix">
+                                <li><span class="filter active" data-filter="all">Todos</span></li>
+                                <li><span class="filter" data-filter=".web">Web</span></li>
+                                <li><span class="filter" data-filter=".mobile">Mobile</span></li>
+                                <li><span class="filter" data-filter=".design">Design Gráfico</span></li>
+                            </ul>
+                            
+                            <div id="gallery" class="wow fadeInUp">
+                                <a class="gallery-item mobile" href="#" data-cat="logo">
+                                    <div class="inside">
+                                        <div class="details">
+                                            <div class="text">
+                                                <h2>Arte No Fazer</h2>
+                                                <p>Aplicativo Mobile</p>
+                                            </div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <img src="img/portfolio/ArteNoFazer02.png" alt="" />
+                                    </div>
+                                </a>
+                                <a class="gallery-item design" href="#" data-cat="logo">
+                                    <div class="inside">
+                                        <div class="details">
+                                            <div class="text">
+                                                <h2>Rosa Chocolates</h2>
+                                                <p>Cartão de Contato</p>
+                                            </div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <img src="img/portfolio/CartãoRosaChocolates.png" alt="" />
+                                    </div>
+                                </a>
+                                <a class="gallery-item design" href="#" data-cat="logo">
+                                    <div class="inside">
+                                        <div class="details">
+                                            <div class="text">
+                                                <h2>Kook</h2>
+                                                <p>Aplicativo Mobile</p>
+                                            </div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <img src="img/portfolio/Kook01.png" alt="" />
+                                    </div>
+                                </a>
+                                <a class="gallery-item design" href="#" data-cat="logo">
+                                    <div class="inside">
+                                        <div class="details">
+                                            <div class="text">
+                                                <h2>Marília Interiores</h2>
+                                                <p>Logo</p>
+                                            </div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <img src="img/portfolio/MariliaInteriores.png" alt="" />
+                                    </div>
+                                </a>
+                                <a class="gallery-item design" href="#" data-cat="logo">
+                                    <div class="inside">
+                                        <div class="details">
+                                            <div class="text">
+                                                <h2>Label Design</h2>
+                                                <p>Panfleto</p>
+                                            </div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <img src="img/portfolio/PanfletoLabelDesign.png" alt="" />
+                                    </div>
+                                </a>
+                                <a class="gallery-item web" href="#" data-cat="logo">
+                                    <div class="inside">
+                                        <div class="details">
+                                            <div class="text">
+                                                <h2>RH Outdoor</h2>
+                                                <p>Site Web</p>
+                                            </div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <img src="img/portfolio/RhOutdoor02.png" alt="" />
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="callToAction" class="wow fadeInUp">
+                    <h2>Interesse em <br>criar com a gente?</h2>
+                    <a><button>Efetuar Orçamento</button></a>
+                </section>
+                <section id="methodology">
+                    <div class="title-box wow fadeInUp">
+                        <h3 style="color:#74D633;">COMO</br> FUNCIONAMOS?</h3>
+                        <h2>PROCESSO</h2>
+                        <div class="rectangle"></div>
+                    </div>
+                    <div class="step-nav wow fadeInUp">
+                        <div class="step first">
+                            <div class="radial-progress active" data-index="0">
+                                <div class="circle">
+                                    <div class="mask full">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="mask half">
+                                        <div class="fill"></div>
+                                        <div class="fill fix"></div>
+                                    </div>
+                                    <div class="shadow"></div>
+                                </div>
+                                <div class="inset"><div class="inner-circle"></div></div>
+                            </div>
+                            <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 123 135" style="enable-background:new 0 0 123 135;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill:#1A1A1A;}
+                            </style>
+                            <g>
+                                <path class="st0" d="M48.4,76.4l-0.8,8.4l-7.4,15.5c0,0,0.9,3.8,4.1,1.4l9.4-14l1.6-4.9L48.4,76.4z"/>
+                                <path class="st0" d="M55.4,49.4l-5.3,18.9c0,0-2,4.6,2.6,8.4l12.1,10.5l-1.3,15.3c0,0,1.5,3.8,4.1,1l3.8-17.1c0,0-0.1-4.2-1.5-5.3
+                                    l-8.6-9l3.5-14.9l6.9,5c0,0,2.5,1.9,4.5,0l10.5-6.9c0,0,2.1-4.3-3.4-2.8L75,56.3l-9.4-6.9l-8.3-2.5C57.6,46.9,56.9,47.1,55.4,49.4z
+                                    "/>
+                                <path class="st0" d="M83,104.7L83,104.7c-0.9,0-1.6-0.7-1.6-1.6v-55c0-0.9,0.7-1.6,1.6-1.6l0,0c0.9,0,1.6,0.7,1.6,1.6v55
+                                    C84.6,104,83.9,104.7,83,104.7z"/>
+                                <circle class="st0" cx="65.1" cy="37.4" r="7.1"/>
+                                <path class="st0" d="M52.7,49.1l-5.3,17c0,0-1.3,3.2-7.8,1.7c0,0-6.8-2.4-2-9.1C37.5,58.6,49.5,40.8,52.7,49.1z"/>
+                            </g>
+                            </svg>
+                        </div>	
+                        <div class="step">
+                            <div class="line">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="radial-progress" data-index="1">
+                                <div class="circle">
+                                    <div class="mask full">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="mask half">
+                                        <div class="fill"></div>
+                                        <div class="fill fix"></div>
+                                    </div>
+                                    <div class="shadow"></div>
+                                </div>
+                                <div class="inset"><div class="inner-circle"></div></div>
+                            </div>
+                            <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 123 135" style="enable-background:new 0 0 123 135;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill:#1A1A1A;}
+                            </style>
+                            <g>
+                                <path class="st0" d="M52,71L40.8,97.7c0,0,0.6,7.3,7.2,3.4l9.4-21.3c0,0,2.6,1,5.4-0.3l9.8-4.4l2.2,9.2c0,0,4.5,3.5,7-1.8L78.4,68
+                                    c0,0-0.9-4.5-6-1.9l-5.7,3.2L66.6,71H52z"/>
+                                <polygon class="st0" points="64.2,82.6 66.4,80.6 66.4,105.9 64.2,105.9 	"/>
+                                <path class="st0" d="M68.8,63v1.9c0,0,15.7-6.6,21.8-36.1h-2.5C88.1,28.8,85.9,49.5,68.8,63z"/>
+                                <path class="st0" d="M51.9,57.9v10.7h14.5V55.4l13.3-21c0,0,0.4-6.3-5.8-2.9l-11,18h-7.3L44,53.8L38,45c0,0-5.1-2.5-5.6,2.9
+                                    L39.6,59c0,0,2.1,2.8,5.6,0.9L51.9,57.9z"/>
+                                <circle class="st0" cx="57.8" cy="41.8" r="5.6"/>
+                            </g>
+                            </svg>                        
+                        </div>
+                        <div class="step">
+                            <div class="line">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="radial-progress" data-index="2">
+                                <div class="circle">
+                                    <div class="mask full">
+                                    <div class="fill"></div>
+                                </div>
+                                <div class="mask half">
+                                    <div class="fill"></div>
+                                    <div class="fill fix"></div>
+                                </div>
+                                <div class="shadow"></div>
+                            </div>
+                            <div class="inset"><div class="inner-circle"></div></div>
+                        </div>
+                        <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 123 135" style="enable-background:new 0 0 123 135;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0{fill:#1A1A1A;}
+                        </style>
+                        <g>
+                            <path class="st0" d="M44,31.9c0,0-1.3,0.5,2,2.5c0,0,1.3-1.1,1,8.7c0,0,0.8,4.1,6.8,4l5.3-0.8c0,0-4.8,0.8-4.1,2.5
+                                c0,0,1.8,3.1,1.1,3.5c0,0-3.2,1.7-2.3,5.5l3.8,20.5c0,0,1.7,3.2,6.8,5.5c0,0-8,1.6-5.7,7.3l2.5,9.8v2.3H86c0,0,4.5-1.3,4.5-5.8
+                                V36.7c0,0-1-4.9-4.5-4.9L44,31.9L44,31.9z"/>
+                            <path class="st0" d="M41.3,35.2l-0.9,9.5l2.6,1.5l1.3-8C44.3,38.2,42.7,33,41.3,35.2z"/>
+                            <circle class="st0" cx="39.2" cy="50" r="3.8"/>
+                            <path class="st0" d="M41,66.3l-1.8-5c0,0-0.6-1.9,3.1-1.9l4.2-0.4l3.7-1.7l3.4-3.5c0,0-0.2-2.9-1.4-2l-6.8,4.8l-4.8-0.4l-4.7-1.6
+                                c0,0-4-0.4-3.5,2.8l5.4,17.8c0,0,3.8,1,6.7-0.5l3.2-1.2c0,0,1.7-0.7,1.9,1.5l3.3,11.5c0,0,2.3,2.2,3.6,0L52.9,73
+                                c0,0-0.7-3.9-4.2-3.1s-7,0.3-7,0.3L41,66.3z"/>
+                            <path class="st0" d="M38.4,77h3.8l0.8,3.8l-2.3,13.1c0,0-2.4,3.6-4.1,0l3.2-13.4L38.4,77z"/>
+                            <polygon class="st0" points="44.3,76 45.4,76 50.4,103.1 49.4,103.1 	"/>
+                        </g>
+                        </svg>                  
+                    </div>
+                    <div class="step">
+                        <div class="line">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="radial-progress" data-index="3">
+                        <div class="circle">
+                            <div class="mask full">
+                                <div class="fill"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill"></div>
+                                <div class="fill fix"></div>
+                            </div>
+                            <div class="shadow"></div>
+                        </div>
+                            <div class="inset"><div class="inner-circle"></div></div>
+                        </div>
+                        <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 123 135" style="enable-background:new 0 0 123 135;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0{fill:#1A1A1A;}
+                            .st1{fill:none;stroke:#1A1A1A;stroke-width:4;stroke-miterlimit:10;}
+                        </style>
+                        <g>
+                            <g>
+                                <polygon class="st0" points="22.5,101 100.5,101 98.1,95.7 85.1,89.3 73.6,78.4 68.4,70 66.1,73.2 62.6,70 44.9,80.3 27.3,93 		
+                                    "/>
+                                <polygon class="st1" points="22.5,101 100.4,101 98.4,96 89.6,91.4 84.9,80.9 80.3,83 73,63 61.4,58.8 52.8,75 48,72.5 43.9,79.9 
+                                    33.5,81.5 		"/>
+                            </g>
+                            <g>
+                                <circle class="st0" cx="57.6" cy="37.2" r="3.2"/>
+                                <path class="st0" d="M54,41.3L50,45c0,0-1.2,1.3,0,2.4l2.2,2.6c0,0,2.2,0.7,1.8-1.6l-1.9-2.3l2.8-2.1v6.5l0.6,6.5l-1.1,7.8
+                                    c0,0,0.9,2,2.5,0.4l1.6-7.6l-0.3-6.5l3,1.9v5.6c0,0,1.1,1.8,2.4,0.4l0.6-7.8L60.4,49l0.1-4.4l2,2.7l4.4,0.3c0,0,1.6-1.1,0-2.1
+                                    l-3.1-0.1l-2.4-4.3H54V41.3z"/>
+                                <path class="st0" d="M66.8,56.7L66.8,56.7c-0.5,0-0.8-0.4-0.8-0.8v-6.2c0-0.5,0.4-0.8,0.8-0.8l0,0c0.5,0,0.8,0.4,0.8,0.8v6.2
+                                    C67.6,56.3,67.2,56.7,66.8,56.7z"/>
+                                <path class="st0" d="M66.8,44.3L66.8,44.3c-0.5,0-0.8-0.4-0.8-0.8v-6.2c0-0.5,0.4-0.8,0.8-0.8l0,0c0.5,0,0.8,0.4,0.8,0.8v6.2
+                                    C67.6,43.9,67.2,44.3,66.8,44.3z"/>
+                                <path class="st0" d="M68.8,37.2v6.4c0,0,3.3-1.5,5,0s3.7,0.4,3.7,0.4v-7c0,0-2,1.2-4,0c-0.7-0.4-1.4-0.7-2.2-0.7
+                                    C70.4,36.3,69.4,36.5,68.8,37.2z"/>
+                            </g>
+                        </g>
+                        </svg>                   
+                    </div>
+                    </div>
+                    <div class="copy-holder wow fadeInUp">
+                        <div class="step-1 active">
+                            <h4>Briefing</h4>
+                            <p>Tell exactly what you see</p>
+                        </div>
+                        <div class="step-2">
+                            <h4>Planejamento</h4>
+                            <p>How is the work organized?</p>
+                        </div>
+                        <div class="step-3 ">
+                            <h4>Desenvolvimento</h4>
+                            <p>What message does this artwork communicate?</p>
+                        </div>
+                        <div class="step-4">
+                            <h4>Entrega</h4>
+                            <p>How successful or important is the work of art?</p>
+                        </div>
+                    </div>            
+                </section> 
+                <section id="newsletter" class="wow fadeInUp">
+                    <h2>Mantenha-se Atualizado!!</h2>
+                    <h4>Inscreve-se na nossa lista de emails</h4>
+                    <div class="newsletter-box">
+                        <form>
+                            <input type="email" id="input-email" placeholder="johndoe@gmail.com.br">
+                            <input type="submit" value="Salvar" id="input-submit">
+                        </form>
+                    </div>
+                </section>   
+                <section id="contact" class="wow fadeInUp">
+                    <div class="title-box">
+                        <h3 style="color: #C442DC;">QUER</br>FALAR CONOSCO?</h3>
+                        <h2>CONTATO</h2>
+                        <div class="rectangle"></div>
+                        <form id="contact-form">
+                            <div class="d-flex contact-form-box justify-content-center align-items-stretch">
+                                <div class="d-flex flex-column">
+                                    <input type="text" id="input-name" placeholder="NOME">
+                                    <input type="email" id="input-email" placeholder="EMAIL">
+                                    <input type="text" id="input-subject" placeholder="ASSUNTO">
+                                </div>
+                                <div>
+                                    <textarea name="message" type="text" id="input-message" placeholder="MENSAGEM"></textarea>
+                                </div>
+                            </div>
+                            
+                            <input type="submit" value="Enviar" id="input-submit">
+                        </form>
+                    </div>
+                </section>
+                <footer>
+                    <svg id="curveDownColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" style="padding-top:0; margin-top:0;fill: #fff !important;" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 0 C 50 100 80 100 100 0 Z"></path></svg>    
+                    <div class="d-flex justify-content-end">
+                        <div class="flex-column contact-infos">
+                            <div class="d-flex justify-content-end">
+                                <p>contato.overest@gmail.com</p>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>                        
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <p>(85) 98548-9885</p>
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i>                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between" style="margin: 20px 0;">
+                        <img class="footer-logo" src="img/footer-logo.png">
+                        <ul class="footer-social-list">
+                            <li><i class="fa fa-facebook-official" aria-hidden="true"></i> </li>
+                            <li><i class="fa fa-instagram" aria-hidden="true"></i> </li>
+                            <li><i class="fa fa-twitter" aria-hidden="true"></i> </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>© 2017. Overest Ltda. - Direitos Reservados</p>
+                        <ul class="map-link-list">
+                            <li>Sobre</li>
+                            <li>Portfólio</li>
+                            <li>Benefícios</li>
+                            <li>Serviços</li>
+                            <li>Contato</li>
+                            <li>Briefing</li>
+                        </ul>
+                    </div>
+                </footer>                         
+            </div>			
+        </div>        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>                		
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>            		        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>            		                
+        <script src="js/bootstrap.min.js"></script>            
+        <script src="js/owl.carousel.min.js"></script>  
+        <script  src="js/index.js"></script>
+
+        <script src="js/wow.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    </body>
+</html>
