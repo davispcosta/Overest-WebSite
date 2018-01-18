@@ -382,8 +382,9 @@ body.night {
     transition: all 0.3s;
     opacity: 0;
     top: -100px;
-    padding: 10px 0;
+    padding: 20px 0;
     font-family: "Montserrat", sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
   @media only screen and (max-width: 766px) {
     .main_h {
@@ -648,8 +649,8 @@ body.night {
     bottom: 0;
     width: 200px;
     height: 200px;
-    -webkit-transition: all 2s; /* Safari */
-    transition: all 2s;
+    -webkit-transition: all 1s; /* Safari */
+    transition: all 1s;
 }
 
 .service-box > img {
@@ -662,19 +663,21 @@ body.night {
     margin-right: -20px;
     margin-bottom: -20px;
     border-radius: 50px;
-    -webkit-transition: all 2s; /* Safari */
-    transition: all 2s;
+    -webkit-transition: all 1s; /* Safari */
+    transition: all 1s;
 }
 
 #services-list li:hover .box-center img{
     width: 50px;
     margin-top: 10px;
-    -webkit-transition: all 2s; /* Safari */
-    transition: all 2s;
+    -webkit-transition: all 1s; /* Safari */
+    transition: all 1s;
 }
 
 #services-list li:hover .box-center h3{
     display: none;
+    -webkit-transition: all 1s; /* Safari */
+    transition: all 1s;    
 }
 
 
@@ -690,18 +693,25 @@ body.night {
 #services-list li > h3{
     text-align: left;
     text-transform: uppercase;
+    -webkit-transition: all 1s; /* Safari */
+    transition: all 1s;
+    cursor: default;
     
 }
 
 #services-list li > p{
     font-family: 'circe-regular', sans-serif;
     margin-top: 10px;
+    cursor: default;
+    
 }
 
 #services-list li img {
     width: 100px;
     margin-top: -20px;
     margin-bottom: 20px;
+    -webkit-transition: all 1s; /* Safari */
+    transition: all 1s;
 }
 
 .box-center h3 {
@@ -1146,13 +1156,28 @@ body.night {
 }
 
 #contact-form input[type="submit"] {
-    padding: 15px 50px;
-    border: none;
-    color: whitesmoke;
-    text-transform: uppercase;
-    background-color: #DF2E2E;
-    border-radius: 30px;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 20px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
     cursor: pointer;
+    background-color: #df2e2e;
+    box-shadow: 0px 5px 0px 0px #c82626;
+    border: none;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #ea3737;
+}
+
+#contact-form input[type="submit"]:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
 }
 
 /*  -----------------  FOOTER    */
