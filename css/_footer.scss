@@ -1,0 +1,35 @@
+
+/*  -----------------  FOOTER    */
+
+footer {
+    background-color: #2e2e2e;
+    color: #969696;
+}
+
+footer svg {
+    margin-bottom: 20px
+}
+
+footer hr{
+    width:60vw;
+    border-color:#535353;
+    height:1px;
+}
+
+footer div {
+    padding: 20px;
+}
+
+.map-link-list, .footer-social-list {
+    display: inline-block;
+}
+
+.map-link-list li, .footer-social-list li {
+    float: left;
+    margin: 0 10px;
+}
+
+.footer-logo{
+    height: 40px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Overest</title>
+
+        <link rel="icon" href="img/shorticon.png" />
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.css">
+
+        <link rel="stylesheet" href="css/about.css">    
+    </head>
+    <body>
+        <div id="loader-wrapper">
+            <div id="loader"></div>                 
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>             
+        </div>
+        <header class="main_h daytime sticky">
+            <div class="row d-flex align-items-center">
+                <a class="logo" href="#"><img src="img/icon.png" /></a>                                            
+                <div class="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>                                            
+                <nav>
+                    <ul>
+                        <li><a href="#services">SERVIÇOS</a></li>
+                        <li><a href="#portfolio">PORTFÓLIO</a></li>
+                        <li><a href="#methodology">METODOLOGIA</a></li>
+                        <li><a href="#contact">CONTATO</a></li>
+                    </ul>
+                </nav>	
+            </div> <!-- / row -->		
+        </header>
+        <section id="title">
+            <h1>SOBRE NÓS</h1>
+        </section>
+        <section id="about" class="d-flex justify-content-around">
+            <div>
+                <img src="img/benefits/creation.png">
+            </div>
+            <div class="about-text">
+                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                <p>Nullam eros augue, lacinia non fringilla ut, iaculis ut ipsum. Nulla quis accumsan nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere felis in nunc porttitor elementum. Etiam dignissim pretium orci at luctus. Suspendisse tincidunt lobortis pulvinar. Mauris aliquet ipsum aliquet tellus malesuada consequat. Nulla libero mi, rhoncus eu dignissim nec, posuere non dui. Sed lobortis lacinia tellus, a feugiat dolor imperdiet ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec placerat tincidunt turpis, non auctor elit.</p>
+            </div>                
+        </section>
+        <section id="team">
+            <div class="title-box wow fadeInRight">
+                <h3 style="color: #5E2CE3;">QUEM </br>SOMOS?</h3>
+                <h2>TIME</h2>
+                <div class="rectangle"></div>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="people" style="background:url(img/team/davi.jpg);background-position:center;"> 
+                    <div class="people-box d-flex flex-column align-items-center">
+                        <img src="img/team/persona-davi.png">
+                        <h6>Davi Costa</h6>
+                    </div>
+                </div>
+                <div class="people" style="background:url(img/team/adriano.jpg);background-position:center;"> 
+                    <div class="people-box d-flex flex-column align-items-center">
+                        <img src="img/team/persona-adriano.png">
+                        <h6>Adriano Augusto</h6>
+                    </div>
+                </div>
+                <div class="people" style="background:url(img/team/emerson.jpg);background-position:center;"> 
+                    <div class="people-box d-flex flex-column align-items-center">
+                        <img src="img/team/persona-emerson.png">
+                        <h6>Emerson Iago</h6>
+                    </div>
+                </div>
+                <div class="people" style="background:url(img/team/christian.jpg);background-position:center;"> 
+                    <div class="people-box d-flex flex-column align-items-center">
+                        <img src="img/team/persona-christian.png">
+                        <h6>Christian Nogueira</h6>
+                    </div>
+                </div>              
+            </div>        
+        </section>
+        <footer>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" fill="#fff" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+                <path d="M0 0 L50 100 L100 0 Z" />
+            </svg>                        
+            <div class="d-flex flex-column align-items-center">
+                <img src="img/shorticon.png" class="footer-logo">
+                <ul class="map-link-list">
+                    <li>Sobre</li>
+                    <li>Portfólio</li>
+                    <li>Benefícios</li>
+                    <li>Serviços</li>
+                    <li>Contato</li>
+                    <li>Briefing</li>
+                </ul>
+                <hr>                        
+                <p>© 2017. Overest Ltda. - Direitos Reservados</p>
+            </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>            		        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>            		      
+
+        <script src="https://unpkg.com/popper.js" type="text/javascript"></script>                      	
+        <script src="js/bootstrap.min.js"></script>            
+
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/about.js"></script>
+        <script src="js/wow.js"></script>
+        <script>
+            new WOW().init();
+            $(document).ready(function() {
+                $('.owl-carousel').owlCarousel();
+                $('body').addClass('loaded');            
+            });
+        </script>
+    </body>
+</html>
