@@ -234,7 +234,13 @@ textarea, input, a, button {
 
 @media only screen and (max-width: 766px) {
   .main_h {
-    padding-top: 25px; } }
+    padding-top: 25px;
+    opacity: 1;
+    top: 0px; }
+    .main_h.day {
+      background-color: #2c2c2c; }
+    .main_h.night {
+      background-color: #092752; } }
 .open-nav {
   max-height: 400px !important; }
 
@@ -245,12 +251,10 @@ textarea, input, a, button {
 .sticky {
   opacity: 1;
   top: 0px; }
-
-.sticky.day {
-  background-color: #555; }
-
-.sticky.night {
-  background-color: #092752; }
+  .sticky.day {
+    background-color: #2c2c2c; }
+  .sticky.night {
+    background-color: #092752; }
 
 .logo {
   width: 25px;
@@ -272,7 +276,8 @@ nav {
 
 @media only screen and (max-width: 766px) {
   nav {
-    width: 100%; } }
+    width: 100%;
+    padding-top: 30px; } }
 nav ul {
   list-style: none;
   overflow: hidden;
@@ -322,7 +327,7 @@ nav ul a:hover {
     display: block; } }
 .mobile-toggle span {
   width: 30px;
-  height: 4px;
+  height: 2px;
   margin-bottom: 6px;
   border-radius: 1000px;
   background: #8f8f8f;
@@ -339,29 +344,38 @@ nav ul a:hover {
 footer {
   background-color: #2e2e2e;
   color: #969696; }
+  footer svg {
+    margin-bottom: 20px; }
+  footer hr {
+    width: 60vw;
+    border-color: #535353;
+    height: 1px; }
+  footer div {
+    padding: 20px; }
+  footer .map-link-list {
+    display: inline-block; }
+    footer .map-link-list li {
+      float: left;
+      margin: 10px 10px; }
+      footer .map-link-list li a {
+        text-decoration: none;
+        cursor: pointer;
+        color: #969696;
+        -webkit-transition: all 1s;
+        /* Safari */
+        transition: all 1s; }
+        footer .map-link-list li a:hover {
+          color: #e8e8e8; }
+  footer .footer-logo {
+    height: 40px;
+    margin-bottom: 20px; }
 
-footer svg {
-  margin-bottom: 20px; }
+@media (max-width: 768px) {
+  footer svg {
+    display: none; }
 
-footer hr {
-  width: 60vw;
-  border-color: #535353;
-  height: 1px; }
-
-footer div {
-  padding: 20px; }
-
-.map-link-list, .footer-social-list {
-  display: inline-block; }
-
-.map-link-list li, .footer-social-list li {
-  float: left;
-  margin: 0 10px; }
-
-.footer-logo {
-  height: 40px;
-  margin-bottom: 20px; }
-
+  .footer-logo {
+    display: none; } }
 /* ----------------- TITLE */
 #title {
   padding: 50px;

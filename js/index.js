@@ -349,6 +349,7 @@ var TxtRotate = function(el, toRotate, period) {
     css.type = "text/css";
       css.innerHTML = ".day > .wrap { color: #90F7EC; }";
       css.innerHTML = ".night > .wrap { color: #90F7EC; }";
+      css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #fff }";
     document.body.appendChild(css);
   };
 
@@ -445,5 +446,3 @@ function animateToDefault(){
     TweenLite.to(mainCircle, 0.3, {scale: 1, zIndex: 1, ease: Bounce.easeOut});
     TweenLite.to(stepsCopy, 0.7, {autoAlpha: 0});
 }
-
-

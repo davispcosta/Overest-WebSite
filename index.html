@@ -40,7 +40,7 @@
             </div> <!-- / row -->		
         </header>        
         <div id="page">
-            <div class="keyart" id="nonparallax">
+            <div class="keyart daytime" id="nonparallax">
             </div>
             <div class="keyart" id="parallax">                
                 <div class="view">                        
@@ -84,12 +84,12 @@
                         <img src="img/phone.png" />
                     </div>
                     <div class="index-box d-flex flex-column">
-                        <h1>Querendo<br>Soluções <span
+                        <h1>Criando <br class="first-br">Soluções <br class="second-br"><span
                             class="txt-rotate daytime"
                             data-period="2000"
-                            data-rotate='[ "digitais", "novas", "modernas", "rápidas" ]'></span>?</h1>
+                            data-rotate='[ "digitais", "novas", "modernas", "rápidas" ]'></span></h1>
                         <h3>Em qualquer lugar e a qualquer hora</h3>
-                        <ul class="index-list">
+                        <ul class="index-list d-flex justify-content-center">
                             <li><img src="img/services/laptop.png" /></li>
                             <li><img src="img/services/graphic_design.png" /></li>
                             <li><img src="img/services/device.png" /></li>
@@ -157,30 +157,34 @@
                                 </div>                                
                             </div>
                         </li>
-                    </ul>
-                </section>                
-                <section id="why-hire" class="d-flex flex-column align-items-center">
-                    <div style="border-color:#F6E606;margin-left: -150px;">
-                        <img style="margin-left: -100px;" src="img/benefits/www.png">
+                    </ul>                    
+                </section>              
+                <section id="why-hire" class="d-flex flex-column align-items-center">                    
+                    <div class="motive motive-1" style="border-color:#F6E606;">
+                        <img class="rellax" data-rellax-speed="-0.5" style="margin-left: -100px;" src="img/benefits/www.png">
                         <h1 style="color:#DF2E2E;margin-left: 100px;">Coloque-se <br> No Mapa</h1>
                         <h4 style="margin-left: 100px;">Lorem ipsum dolor sit amet, 
                             consectetur 
                             adipiscing elit.</h4>
                     </div>
-                    <div style="border-color:#06B4F6;margin-left: 150px;">
-                        <img style="margin-left: -100px;" src="img/benefits/pencil_ruler.png">
-                        <h1 style="color:#5E2CE3;margin-left: 100px;">Re-invente <br> Sua Empresa</h1>
+                    <div class="motive motive-2" style="border-color:#06B4F6;">
+                        <img class="rellax" data-rellax-speed="-0.5" style="margin-left: -100px;" src="img/benefits/pencil_ruler.png">
+                        <h1 class="rellax" data-rellax-speed="0.4" style="color:#5E2CE3;margin-left: 100px;">Re-invente <br> Sua Empresa</h1>
                         <h4 style="margin-left: 100px;">Lorem ipsum dolor sit amet, 
                             consectetur 
                             adipiscing elit.</h4>
                     </div>
-                    <div style="border-color:#F69E06;margin-left: -150px;">
-                        <img style="margin-left: -150px;" src="img/benefits/computer.png">
+                    <div class="motive motive-3" style="border-color:#F69E06;">
+                        <img class="rellax" data-rellax-speed="-0.3" style="margin-left: -150px;" src="img/benefits/computer.png">
                         <h1 style="color:#0C4A45;margin-left: 100px;">Traga <br> Inovação</h1>
                         <h4 style="margin-left: 100px;">Lorem ipsum dolor sit amet, 
                             consectetur 
                             adipiscing elit.</h4>
                     </div>
+                </section>
+                <section id="callToAction" class="wow fadeInUp">
+                        <h2>Interesse em <br>criar com a gente?</h2>
+                        <a><button>Efetuar Orçamento</button></a>
                 </section>
                 <section id="portfolio">
                     <div class="title-box wow fadeInLeft">
@@ -274,11 +278,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
-                <section id="callToAction" class="wow fadeInUp">
-                    <h2>Interesse em <br>criar com a gente?</h2>
-                    <a><button>Efetuar Orçamento</button></a>
-                </section>
+                </section>                
                 <section id="methodology">
                     <div class="title-box wow fadeInUp">
                         <h3 style="color:#74D633;">COMO</br> FUNCIONAMOS?</h3>
@@ -488,13 +488,12 @@
                     </svg>                        
                     <div class="d-flex flex-column align-items-center">
                         <img src="img/shorticon.png" class="footer-logo">
-                        <ul class="map-link-list">
-                            <li>Sobre</li>
-                            <li>Portfólio</li>
-                            <li>Benefícios</li>
-                            <li>Serviços</li>
-                            <li>Contato</li>
-                            <li>Briefing</li>
+                        <ul class="map-link-list link-effect">
+                            <li><a href="about.html">Sobre</a></li>
+                            <li><a href="#portfolio">Portfólio</a></li>
+                            <li><a href="#services">Serviços</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                            <li><a href="briefing.html">Briefing</a></li>
                         </ul>
                         <hr>                        
                         <p>© 2017. Overest Ltda. - Direitos Reservados</p>
@@ -510,14 +509,22 @@
 
         <script src="https://unpkg.com/popper.js" type="text/javascript"></script>                      	
         <script src="js/bootstrap.min.js"></script>            
+        <script src="js/rellax.min.js"></script>
+        <script src="js/wow.js"></script>
 
         <script  src="js/index.js"></script>
-        <script src="js/wow.js"></script>
         <script>
             new WOW().init();
+            var rellax = new Rellax('.rellax');
+
             $(document).ready(function() {
                 $('body').addClass('loaded');            
             });
+            
+            const mq = window.matchMedia( "(max-width: 768px)" );
+            if (mq.matches) {
+                rellax.destroy();
+            }
         </script>
     </body>
 </html>
