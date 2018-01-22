@@ -161,21 +161,21 @@
                 </section>              
                 <section id="why-hire" class="d-flex flex-column align-items-center">                    
                     <div class="motive motive-1" style="border-color:#F6E606;">
-                        <img class="rellax" data-rellax-speed="-0.5" style="margin-left: -100px;" src="img/benefits/www.png">
+                        <img src="img/benefits/www.png">
                         <h1 style="color:#DF2E2E;margin-left: 100px;">Coloque-se <br> No Mapa</h1>
                         <h4 style="margin-left: 100px;">Lorem ipsum dolor sit amet, 
                             consectetur 
                             adipiscing elit.</h4>
                     </div>
                     <div class="motive motive-2" style="border-color:#06B4F6;">
-                        <img class="rellax" data-rellax-speed="-0.5" style="margin-left: -100px;" src="img/benefits/pencil_ruler.png">
-                        <h1 class="rellax" data-rellax-speed="0.4" style="color:#5E2CE3;margin-left: 100px;">Re-invente <br> Sua Empresa</h1>
+                        <img src="img/benefits/pencil_ruler.png">
+                        <h1 style="color:#5E2CE3;margin-left: 100px;">Re-invente <br> Sua Empresa</h1>
                         <h4 style="margin-left: 100px;">Lorem ipsum dolor sit amet, 
                             consectetur 
                             adipiscing elit.</h4>
                     </div>
                     <div class="motive motive-3" style="border-color:#F69E06;">
-                        <img class="rellax" data-rellax-speed="-0.3" style="margin-left: -150px;" src="img/benefits/computer.png">
+                        <img style="margin-left: -150px;" src="img/benefits/computer.png">
                         <h1 style="color:#0C4A45;margin-left: 100px;">Traga <br> Inovação</h1>
                         <h4 style="margin-left: 100px;">Lorem ipsum dolor sit amet, 
                             consectetur 
@@ -509,22 +509,16 @@
 
         <script src="https://unpkg.com/popper.js" type="text/javascript"></script>                      	
         <script src="js/bootstrap.min.js"></script>            
-        <script src="js/rellax.min.js"></script>
         <script src="js/wow.js"></script>
 
         <script  src="js/index.js"></script>
         <script>
             new WOW().init();
-            var rellax = new Rellax('.rellax');
 
             $(document).ready(function() {
                 $('body').addClass('loaded');            
             });
             
-            const mq = window.matchMedia( "(max-width: 768px)" );
-            if (mq.matches) {
-                rellax.destroy();
-            }
         </script>
     </body>
 </html>
